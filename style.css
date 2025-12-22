@@ -1,0 +1,83 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .container {
+      color: lightcoral;
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+      text-align: center;
+      color: crimson;
+      padding-bottom: 35px;
+  }
+  
+  form {
+      display: grid;
+      gap: 15px;
+  }
+  
+  label {
+      font-weight: bold;
+  }
+  
+  input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+  }
+  
+  button {
+      width: 100%;
+      padding: 10px;
+      background-color: crimson;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .sgpa-button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  
+  button:hover {
+      background-color: #620303;
+  }
+  
+  #result {
+      margin-top: 20px;
+      text-align: center;
+      color: lightcoral;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  .footer {
+      text-align: center;
+      font-style: italic;
+      margin-top: 50px;
+      color: #888;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .container {
+          width: 90%;
+          margin: 20px auto;
+      }
+  }
+  

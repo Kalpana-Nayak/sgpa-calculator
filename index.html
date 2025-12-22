@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SGPA Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>5th Sem SGPA Calculator</h2>
+
+    <form id="cgpaForm">
+        <label for="ethics">Ethics</label>
+        <input type="text" id="ethics" name="ethics" required>
+
+        <label for="ise">ISE</label>
+        <input type="text" id="ise" name="ise" required>
+
+        <label for="os">OS</label>
+        <input type="text" id="os" name="os" required>
+
+        <label for="toc">TOC</label>
+        <input type="text" id="toc" name="toc" required>
+
+        <label for="aiml">AIML</label>
+        <input type="text" id="aiml" name="aiml" required>
+
+        <label for="dmdw">DMDW</label>
+        <input type="text" id="dmdw" name="dmdw" required>
+
+        <label for="osLab">OS Lab</label>
+        <input type="text" id="osLab" name="osLab" required>
+
+        <label for="tocLab">TOC Lab</label>
+        <input type="text" id="tocLab" name="tocLab" required>
+
+        <label for="aimlLab">AIML Lab</label>
+        <input type="text" id="aimlLab" name="aimlLab" required>
+
+        <div class="sgpa-button">
+        <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
+        </div>
+    </form>
+
+    <div id="result"></div>
+
+    <div class="footer">Made By Kalpana </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
