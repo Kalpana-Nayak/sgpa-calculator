@@ -110,6 +110,13 @@ h2 {
             outline: none;
   }
 
+    /* Ensure form controls show white text when in dark theme */
+    body:not(.light-theme) input[type="text"],
+    body:not(.light-theme) select,
+    body:not(.light-theme) textarea {
+            color: #ffffff;
+    }
+
     select{
         width: 100%;
         padding: 8px;
