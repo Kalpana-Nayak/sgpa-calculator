@@ -110,17 +110,47 @@ h2 {
             outline: none;
   }
 
-    body.light-theme select, body.light-theme select option { color: #000; }
-    body:not(.light-theme) select, body:not(.light-theme) select option { color: #fff; }
+    /* body.light-theme select, body.light-theme select option { color: #000; }
+    body:not(.light-theme) select, body:not(.light-theme) select option { color: #fff; } */
+    /* LIGHT THEME (default) */
 
-    select{
-        width: 100%;
-        padding: 8px;
-        border-radius: 4px;
-        border: 1px solid var(--input-border);
-        background:transparent;
-        transition: border-color 150ms ease, box-shadow 150ms ease;
-    }
+    /* ---------- Custom Dropdown ---------- */
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.select-selected {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--input-border);
+    background: var(--container-bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    left: 0;
+    background: var(--container-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    display: none;
+    z-index: 10;
+}
+
+.select-items div {
+    padding: 8px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.select-items div:hover {
+    background: var(--accent);
+    color: #fff;
+}
   
   #result {
       margin-top: 20px;

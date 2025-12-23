@@ -41,6 +41,35 @@ function calculateSGPA() {
   document.getElementById("result").innerHTML = "Your SGPA will be: " + sgpa.toFixed(2);
 }
 
+document.querySelectorAll(".custom-select").forEach(select => {
+    const selected = select.querySelector(".select-selected");
+    const options = select.querySelector(".select-items");
+    const inputId = select.dataset.input;
+    const hiddenInput = document.getElementById(inputId);
+
+    selected.addEventListener("click", () => {
+        options.style.display =
+            options.style.display === "block" ? "none" : "block";
+    });
+
+    options.querySelectorAll("div").forEach(option => {
+        option.addEventListener("click", () => {
+            selected.textContent = option.textContent;
+            hiddenInput.value = option.dataset.value; // 🔥 feeds SGPA
+            options.style.display = "none";
+        });
+    });
+});
+
+document.addEventListener("click", e => {
+    document.querySelectorAll(".select-items").forEach(list => {
+        if (!list.parentElement.contains(e.target)) {
+            list.style.display = "none";
+        }
+    });
+});
+
+
 // Theme toggle: applies `light-theme` class on <html> to switch variables.
 function applyTheme(theme) {
   document.documentElement.classList.toggle('light-theme', theme === 'light');
