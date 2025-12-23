@@ -8,35 +8,119 @@
 </head>
 <body>
 <div class="container">
+    <div style="display:flex; justify-content:flex-end; gap:8px;">
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="Toggle theme">Theme</button>
+    </div>
     <h2>5th Sem SGPA Calculator</h2>
 
-    <form id="cgpaForm">
+    <form id="sgpaForm">
         <label for="ethics">Ethics</label>
-        <input type="text" id="ethics" name="ethics" required>
+        <select id="ethics" name="ethics" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="ise">ISE</label>
-        <input type="text" id="ise" name="ise" required>
+        <select id="ise" name="ise" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="os">OS</label>
-        <input type="text" id="os" name="os" required>
+        <select id="os" name="os" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="toc">TOC</label>
-        <input type="text" id="toc" name="toc" required>
+        <select id="toc" name="toc" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="aiml">AIML</label>
-        <input type="text" id="aiml" name="aiml" required>
+        <select id="aiml" name="aiml" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="dmdw">DMDW</label>
-        <input type="text" id="dmdw" name="dmdw" required>
+        <select id="dmdw" name="dmdw" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="osLab">OS Lab</label>
-        <input type="text" id="osLab" name="osLab" required>
+        <select id="osLab" name="osLab" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="tocLab">TOC Lab</label>
-        <input type="text" id="tocLab" name="tocLab" required>
+        <select id="tocLab" name="tocLab" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <label for="aimlLab">AIML Lab</label>
-        <input type="text" id="aimlLab" name="aimlLab" required>
+        <select id="aimlLab" name="aimlLab" required>
+            <option value=""> </option>
+            <option value="10">O</option>
+            <option value="9">A+</option>
+            <option value="8">A</option>
+            <option value="7">B+</option>
+            <option value="6">B</option>
+            <option value="5">C</option>
+            <option value="0">F</option>
+        </select>
 
         <div class="sgpa-button">
         <button type="button" onclick="calculateSGPA()">Calculate SGPA</button>
